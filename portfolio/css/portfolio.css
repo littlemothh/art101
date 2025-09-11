@@ -1,118 +1,388 @@
 
-* {box-sizing:border-box}
+:root {
+  background-image: url("https://art.pixilart.com/sr234eca1934daws3.png");
+  background-repeat: none;
+  background-position: center;
+  background-size:cover;
+  cursor:url("https://ita.toys/links/apple.gif"), auto;
 
-body{
-    background-image: url("https://art.pixilart.com/sr234eca1934daws3.png");
-    background-repeat: none;
-    background-position: center;
-    background-size:cover;
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color:#5b0851;
+
+  --font-color: #5b0851;
+
+  --background-color: #a992a6;
+  --tab-hover-color: #92718e;
+
+  --border-color: #ED64F5;
+
 }
 
-.slideshow-container {
-    position: relative;
-    max-width: 1000px; 
-    margin: auto;
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1,h2,h3 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+
+p{
+  color: var(--font-color);
+  font-family: 'Nunito', sans-serif;
+}
+
+a{
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+a:hover { 
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: none;
+}
+
+
+  #body-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 90vh;
+    margin-top: auto;
   }
-  
+
+  .content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .image-container {
+    padding:10px;
+    width: 990px;
+    max-width: 990px;
+    height: 75vh; 
+    background-color: var(--background-color);
+    overflow-y: scroll;
+  }
+
+  .tabcontent {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  
+  .tabcontent.active {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .image-box{
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+  }
+
+  #labLinks{
+    background-color:#5a7fe6;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; 
-
-  }
-  
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #a992a6;
-    padding:10px;
-  }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  border-radius: 40px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  background-color: #a992a6;
-  color: rgb(196, 52, 167);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(68, 8, 81, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #5b0851;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-#comissions {
-    background-color: #a992a6;
-    border-color: #5b0851;
-    border-radius: 10px;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-top: 10px;
-    padding-bottom:10px;
-}
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--header-font);
+  }
 
-#email{
-    text-decoration: none;
-}
+  #askFlowers{
+    background-color:#b46eb4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--header-font);
+  }
 
+  .image-box:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    position: relative;
+    cursor: url("https://ita.toys/links/apple2.png"), auto;
+  }
+
+  #commissions-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  #commissions-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #commissions-header h1 {
+    margin: 0;
+    padding: 0;
+  }
 #back-link-container {
     padding: 10px;
-    margin: 10px;
-    margin-bottom: 10px;
-    background-color: #a992a6;
+    bottom:30px;
+    left:30px;
+    background-color: var(--background-color);
     position: absolute;
+}
+
+  .tab {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    height: fit-content;
+  }
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  white-space: nowrap;
+  padding-right:20px;
+  padding-left:20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--tab-hover-color);
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--tab-hover-color);
+}
+
+/* Responsive Design */
+
+/* Large Desktop (1200px and up) - Default styles above apply */
+
+/* Desktop/Laptop (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .image-container {
+    width: 90vw;
+    max-width: 900px;
+  }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  #body-container {
+    height: 95vh;
+  }
+  
+  .content-wrapper {
+    width: 95vw;
+  }
+  
+  .image-container {
+    width: 95vw;
+    max-width: 95vw;
+    height: 70vh;
+  }
+  
+  .tab {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .tab button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .image-box {
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+
+/* Mobile Large (481px to 767px) */
+@media (max-width: 767px) and (min-width: 601px) {
+  #body-container {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .image-container {
+    width: 100vw;
+    max-width: 100vw;
+    height: calc(100vh - 60px);
+    padding: 5px;
+    margin: 0;
+  }
+  
+  .tab {
+    width: 100vw;
+    justify-content: center;
+    border-radius: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .tab button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .tab button h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .image-box {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 5px !important;
+  }
+}
+
+/* Mobile Small (320px to 600px) */
+@media (max-width: 600px) {
+  #body-container {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .content-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .image-container {
+    width: 100vw;
+    max-width: 100vw;
+    height: calc(100vh - 50px);
+    padding: 5px;
+    margin: 0;
+  }
+  
+  .tab {
+    width: 100vw;
+    justify-content: center;
+    border-radius: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .tab button {
+    font-size: 12px;
+    padding: 6px 8px;
+    flex: 1;
+    min-width: 60px;
+  }
+  
+  .tab button h3 {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .image-box {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 3px !important;
+  }
+  
+  #back-link-container {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    padding: 3px 6px;
+    font-size: 10px;
+    z-index: 1000;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .image-container {
+    height: calc(100vh - 45px);
+  }
+  
+  .image-box {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .tab {
+    padding: 3px 0;
+  }
+  
+  .tab button {
+    padding: 4px 6px;
+  }
+  
+  .tab button h3 {
+    font-size: 10px;
+  }
 }

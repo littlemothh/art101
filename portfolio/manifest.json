@@ -1,0 +1,88 @@
+{
+    "twoD": [
+        {
+            "path": "img/album.jpeg",
+            "title": "Album Concept"
+        },
+        {
+            "path": "img/careful.jpg",
+            "title": "Careful!!"
+        },
+        {
+            "path": "img/lifedrawing.png",
+            "title": "Life Drawing Practice"
+        },
+        {
+            "path": "img/mintForMe.jpeg",
+            "title": "Mint for Me"
+        },
+        {
+            "path": "img/patchedTogether.png",
+            "title": "Patched Together"
+        },
+        {
+            "path": "img/pickedApart.png",
+            "title": "Picked Apart"
+        },
+        {
+            "path": "img/stretchedThin.jpg",
+            "title": "Stretched Thin"
+        },
+        {
+            "path": "img/silverEyes.png",
+            "title": "Silvery Eyes"
+        },
+        {
+            "path": "img/sketchbook1.jpeg",
+            "title": "Sketchbook 1"
+        },
+        {
+            "path": "img/sketchbook2.jpeg",
+            "title": "Sketchbook 2"
+        },
+        {
+            "path": "img/sketchbook5.png",
+            "title": "Sketchbook 5"
+        },
+        {
+            "path": "img/sketchbook6.jpeg",
+            "title": "Sketchbook 6"
+        },
+        {
+            "path": "img/sketchbook7.png",
+            "title": "Sketchbook 7"
+        },
+        {
+            "path": "img/sketchbook8.png",
+            "title": "Sketchbook 8"
+        },
+        {
+            "path": "img/sketchbook9.png",
+            "title": "Sketchbook 9"
+        }
+    ],
+    "threeD": [
+        {
+            "path": "img/aMistake.jpg",
+            "title": "CSSSA 2022 final work"
+        },
+        {
+            "path": "img/crystalShores.jpeg",
+            "title": "Crystal Shores Coffee Mug"
+        },
+        {
+            "path": "img/mask.png",
+            "title": "Ceramic Mask"
+        },
+        {
+            "path": "img/teaSet.jpg",
+            "title": "Buggy Tea Set"
+        }
+    ],
+    "digital": [
+        {
+            "path": "img/ditigalWork.jpg",
+            "title": "Digital Art Compilation"
+        }
+    ]
+}

@@ -1,0 +1,260 @@
+/* Single Column Layout CSS */
+
+/* Customizable Variables */
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20568.gif');
+  
+  --font: 'Nunito', sans-serif;
+  --font-color: #f8bffb;
+  
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+  
+  --link-color: #ED64F5;
+  
+  --content-bg-color: #43256E;
+  --content-border-color: 4px dotted #ED64F5;
+  --accent-color: #241445;
+  
+  --container-max-width: 700px;
+  --content-padding: 25px;
+}
+
+/* Font Imports */
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Base Styles */
+html {
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor: url("https://ita.toys/links/apple.gif"), auto;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container */
+#container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+#main-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--content-bg-color);
+  padding: var(--content-padding);
+  border: var(--content-border-color);
+}
+
+#main-header h1 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 0 0 0 0;
+}
+
+nav {
+    position:fixed;
+  bottom:30px;
+  left:30px;
+  background-color: var(--content-bg-color);
+  padding: 15px;
+  border: var(--content-border-color);
+}
+
+nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+}
+
+/* Content Blocks */
+.content-block {
+  background-color: var(--content-bg-color);
+  border: var(--content-border-color);
+  margin-bottom: 25px;
+  padding: var(--content-padding);
+}
+
+.content-block h1, .content-block h2, .content-block h3,
+.content-block h4, .content-block h5, .content-block h6 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  margin-top: 0;
+}
+
+.content-block h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--content-border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.content-block h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.content-block p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.content-block ul, .content-block ol {
+  padding-left: 25px;
+}
+
+.content-block li {
+  margin-bottom: 8px;
+}
+
+.content-block a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.content-block a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+blockquote {
+  background-color: var(--accent-color);
+  border-left: 4px solid var(--content-border-color);
+  margin: 20px 0;
+  padding: 15px 20px;
+  font-style: italic;
+}
+
+/* Images */
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: var(--content-border-color);
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background-color: var(--accent-color);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#main-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  :root {
+    --container-max-width: 95%;
+    --content-padding: 20px;
+  }
+  
+  #container {
+    padding: 15px;
+  }
+  
+  #main-header h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+  .content-block h2 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  :root {
+    --container-max-width: 100%;
+    --content-padding: 15px;
+  }
+  
+  #container {
+    padding: 10px;
+  }
+  
+  #main-header {
+    padding: 15px;
+  }
+  
+  #main-header h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .content-block {
+    margin-bottom: 20px;
+  }
+  
+  .content-block h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .content-block h3 {
+    font-size: 16px;
+  }
+  
+  .content-block ul, .content-block ol {
+    padding-left: 20px;
+  }
+}

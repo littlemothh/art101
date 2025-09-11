@@ -1,0 +1,250 @@
+/* Blog CSS */
+
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20568.gif');
+  
+  --font: 'Nunito', sans-serif;
+  --font-color: #f8bffb;
+  
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+  
+  --link-color: #ED64F5;
+  
+  --entry-bg-color: #43256E;
+  --entry-border-color: #ED64F5;
+  --code-bg-color: #241445;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+html {
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor: url("https://ita.toys/links/apple.gif"), auto;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--entry-bg-color);
+  padding: 20px;
+  border: 2px solid var(--entry-border-color);
+  border-radius: 10px;
+}
+
+#blog-header h1 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 0 0 10px 0;
+}
+
+#blog-header nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#blog-header nav a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+}
+
+#loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+  background-color: var(--entry-bg-color);
+  border: 1px solid var(--entry-border-color);
+  border-radius: 8px;
+}
+
+.blog-entry {
+  background-color: var(--entry-bg-color);
+  border: 2px solid var(--entry-border-color);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blog-entry h1, .blog-entry h2, .blog-entry h3, 
+.blog-entry h4, .blog-entry h5, .blog-entry h6 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+.blog-entry h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--entry-border-color);
+  padding-bottom: 10px;
+}
+
+.blog-entry h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.blog-entry p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-entry img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--entry-border-color);
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.blog-entry a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.blog-entry a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+}
+
+.blog-entry ul, .blog-entry ol {
+  padding-left: 25px;
+}
+
+.blog-entry li {
+  margin-bottom: 8px;
+}
+
+.blog-entry code {
+  background-color: var(--code-bg-color);
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.blog-entry pre {
+  background-color: var(--code-bg-color);
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  border: 1px solid var(--entry-border-color);
+}
+
+.blog-entry pre code {
+  background: none;
+  padding: 0;
+}
+
+
+/* Responsive Design */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  #container {
+    padding: 15px;
+  }
+  
+  #blog-header {
+    padding: 15px;
+  }
+  
+  #blog-header h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+  .blog-entry {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .blog-entry h1 {
+    font-size: 22px;
+  }
+  
+  .blog-entry h2 {
+    font-size: 18px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  #container {
+    padding: 10px;
+  }
+  
+  #blog-header {
+    padding: 12px;
+  }
+  
+  #blog-header h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .blog-entry {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-entry h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .blog-entry h2 {
+    font-size: 16px;
+  }
+  
+  .blog-entry ul, .blog-entry ol {
+    padding-left: 20px;
+  }
+  
+  .blog-entry pre {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

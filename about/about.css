@@ -1,0 +1,258 @@
+/* you can control the aesthetics of the about page by changing 
+the variables below in this :root class*/
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20568.gif');
+
+  --font: 'Nunito', sans-serif;
+  --font-color: #f8bffb;
+
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+
+  --link-color: #ED64F5;
+  
+  --box1-color: #43256E;
+  --box2-color: #241445;
+
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+html{
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor:url("https://ita.toys/links/apple.gif"), auto;
+
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
+h1,h2,h3 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  
+}
+
+strong {
+  /* this styles bold text */
+  color: #ED64F5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover { 
+    cursor: url("https://ita.toys/links/apple2.png"), auto;
+    text-decoration: underline;
+}
+
+#container{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+#containerLeft{
+    flex: 2;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerRight{
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dance{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#box1{
+  background-color: var(--box1-color);
+  padding: 30px;
+}
+
+#box2{
+  background-color: var(--box2-color);
+  padding: 30px;
+}
+
+#teeth{
+    text-align:center;
+}
+
+#interestingimage{
+    text-align:center;
+    margin:20px;
+}
+
+.box {
+  margin:10px;
+  background-color: #13092D;
+  border: 1px solid #ED64F5;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* Make images in teeth section responsive */
+#teeth img {
+  max-width: 100%;
+  height: auto;
+}
+
+#interestingimage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+
+/* Tablet (600px to 767px) */
+@media only screen and (max-width: 767px) {
+  #container {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  #containerLeft, #containerRight {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #dance {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #box1, #box2 {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  #teeth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #teeth img {
+    max-width: 45%;
+    flex: 1;
+  }
+}
+
+/* Mobile (480px and below) */
+@media only screen and (max-width: 480px) {
+  #container {
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  #box1, #box2 {
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .box {
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  #teeth {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #teeth img {
+    max-width: 80%;
+  }
+  
+  #interestingimage {
+    margin: 10px;
+  }
+  
+  ul {
+    padding-left: 15px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+}

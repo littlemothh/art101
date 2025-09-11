@@ -1,31 +1,25 @@
-/* this css file will only style the homepage of our site */
-			/* user styles */
+/* css for the homepage */
 
-		/* styles are what change the color and sizes of stuff on your site. */
-
-		/* these are variables that are being used in the code
-these tended to confuse some people, so I only kept 
-the images as variables */
+/* this is where you can change the colors of your page! */
 
 :root {
-  --header-image: url('https://i.pinimg.com/736x/cd/d2/ce/cdd2ce65e548de33271ef3cc00a7828d.jpg');
   --body-bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/048C.jpg');
 
-  /* colors */
-  --content: #9d4221;
+  --welcome-color: #43256E;
+  --sidebar-color: #241445;
+  --marquis-color: #13092D;
+  --footer-color: #13092D;
+
+  --link-color: #ED64F5;
+  --font-color: #f8bffb;
+  --header-color: #ED64F5;
 }
 
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
-/* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-
-
-cursor shit*/ 
+html{
+  background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/048C.jpg);
+  background-size: 65px;
+  cursor:url("https://ita.toys/links/apple.gif"), auto;
+}
      
 
 @font-face {
@@ -55,14 +49,13 @@ cursor shit*/
 body {
   font-family: 'Nunito', sans-serif;
   margin: 0;
-  background-color: #08031A;
-  /* you can delete the line below if you'd prefer to not use an image */
-  background-size: 65px;
-  color: #fceaff;
-  background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/048C.jpg);
-  cursor:url("https://ita.toys/links/apple.gif"), auto;}
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
 
-a, a:hover { cursor: url("https://ita.toys/links/apple2.png"), auto;}
+a:hover { 
+    cursor: url("https://ita.toys/links/apple2.png"), auto;
+    text-decoration: underline;
+}
 
 
 * {
@@ -78,19 +71,14 @@ a, a:hover { cursor: url("https://ita.toys/links/apple2.png"), auto;}
 and change the media query according to the comment! */
   margin: 0 auto;
   /* this centers the entire page */
+  color: var(--font-color);
+  font-weight: bold;
+  padding: 0 10px; /* Add padding for mobile */
 }
 
-#container a {
-  color: #ED64F5;
-  font-weight: bold;
-}
-.container{
-  background-color: rgba(100,201,154);
-  padding : 20px;
-  margin : 50px auto;
-  border : 2px solid white;
-  display : grid;
-  width : 70%;
+#container a{
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 #dance {
@@ -99,8 +87,25 @@ and change the media query according to the comment! */
   margin-left: 15px;
 }
 
-body {
-  background-color: rgba(200,200,170);
+.box {
+  margin:10px;
+  background-color: #13092D;
+  border: 1px solid #ED64F5;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.box ul {
+  list-style-type: '★  ';
+  margin:0;
+  padding:5px;
+
+}
+
+.box ul li {
+  margin:5px;
+  margin-bottom:0px;
+  margin-top:0px;
 }
 
 .btn {
@@ -119,110 +124,30 @@ body {
   margin-bottom: 10px;
 }
 
-
-#header {
-  width: 100%;
-  background-color: #5e4e8c;
-  /* header color here! */
-  height: 160px;
-  /* this is only for a background image! */
-  /* if you want to put images IN the header, 
-you can add them directly to the <div id="header"></div> element! */
-  background-image: var(--header-image);
-  background-size: 100%;
-}
-
 #pokemon {
   width:50px;
-  padding-top: 7px;
-}
-
-#tat1>img {
-  width: 100px;
-  height:fit-content;
-
-  border-color: #5e4e8c;
-  border-width: 5px;
-  border-style: dotted;
-}
-
-#tat2>img {
-  width: 100px;
-  height: fit-content;
-  border-color: #5e4e8c;
-  border-width: 5px;
-  border-style: dotted;
-}
-
-#tat3>img {
-  width: 100px;
-  height: fit-content;
-  border-color: #5e4e8c;
-  border-width: 5px;
-  border-style: dotted;
-}
-
-/* navigation section!! */
-
-#navbar {
-  height: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #13092D;
-  width: 100%;
-}
-
-#navbar ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  justify-content: space-evenly;
-}
-
-#navbar li {
-  padding-top: 10px;
-}
-
-
-/* navigation links*/
-#navbar li a {
-  color: #ED64F5;
-  /* navbar text color */
-  font-weight: 800;
-  text-decoration: none;
-  /* this removes the underline */
-}
-
-/* navigation link when a link is hovered over */
-#navbar li a:hover {
-  color: #a49cba;
-  text-decoration: underline;
 }
 
 #flex {
   display: flex;
 }
 
-/* this colors BOTH sidebars
-if you want to style them separately,
-create styles for #leftSidebar and #rightSidebar */
 aside {
-  background-color: #241445;
+  background-color: var(--sidebar-color);
   width: 200px;
-  padding: 20px;
+  padding: 25px;
+  padding-top:10px;
   font-size: smaller;
   /* this makes the sidebar text slightly smaller */
 }
 
 
-/* this is the color of the main content area,
-between the sidebars! */
-main {
-  background-color: #43256E;
+#welcome {
+  background-color: var(--welcome-color);
   flex: 1;
   padding: 20px;
   order: 2;
+  margin: 0;
 }
 
 /* what's this "order" stuff about??
@@ -241,51 +166,24 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
   align-items: center;
 }
 
-#palestine {
-  max-width: 100%;
-  height: auto;
-  padding: 15px;
-  margin-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-
-#roadkill {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-  margin-right: 30px;
-}
-
-#ihateyou {
-  max-width: 100%;
-  height: auto;
-  align-items: center;
-}
-
 #buttons{
   justify-content: center; /* Center horizontally */
   align-items: center;
+  text-align: center;
 }
 
-#joy {
-  max-width: 100%;
-  height: auto;
-  padding-top: 30px;
-  margin-left: 30px;
-  margin-top: 30px;
+#buttons *{
+  margin: 3px; /* Space between buttons */
 }
 
-#biology {
+#collage {
   max-width: 100%;
   height: auto;
-  padding-top: 30px;
-  margin-left: 25px;
-  margin-top: 5%;
+  width: 100%;
 }
 
 footer {
-  background-color: #13092D;
+  background-color: var(--footer-color);
   /* background color for footer */
   width: 100%;
   height: 40px;
@@ -297,24 +195,20 @@ footer {
 h1,
 h2,
 h3 {
-  color: #ED64F5;
+  color: var(--header-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
   font-size: 25px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  
 }
 
 strong {
   /* this styles bold text */
-  color: #ED64F5;
-}
-
-/* this is just a cool box, it's the darker colored one */
-.box {
-  background-color: #13092D;
-  border: 1px solid #ED64F5;
-  padding: 25px;
-  margin-bottom: 20px;
+  color: var(--header-color);
 }
 
 /* CSS for extras */
@@ -324,7 +218,8 @@ strong {
   height: 30px;
   padding: 10px;
   font-size: smaller;
-  background-color: #13092D;
+  background-color: var(--marquis-color);
+  overflow: hidden; /* Prevent overflow on small screens */
 }
 
 #tat1 {
@@ -349,20 +244,27 @@ and then subtrack it by 100. use this new number as the
 "max-width" value below
 */
 
+/* Tablet styles */
 @media only screen and (max-width: 800px) {
+  
   #flex {
     flex-wrap: wrap;
   }
 
   aside {
     width: 100%;
+    padding: 15px;
+  }
+
+  ul {
+    margin: 0;
   }
 
   /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
-  main {
+  since the sidebars would be too small on a mobile device.
+  feel free to play around with the order!
+  */
+  #main {
     order: 1;
   }
 
@@ -374,8 +276,132 @@ feel free to play around with the order!
     order: 3;
   }
 
+  #welcome {
+    padding: 15px;
+  }
+
   #navbar ul {
     flex-wrap: wrap;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  
+  #topBar {
+    font-size: 12px;
+  }
+  
+  #topBar marquee {
+    font-size: 11px;
+  }
+  
+  aside {
+    font-size: 14px;
+  }
+
+  .box ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #welcome {
+    padding: 15px 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  #buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  #buttons img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  #pokemon {
+    width: 40px;
+  }
+  
+  footer {
+    padding: 8px 5px;
+    font-size: 12px;
+    height: auto;
+    min-height: 30px;
+  }
+}
+
+/* Extra small mobile */
+@media only screen and (max-width: 400px) {
+  #container {
+    padding: 0 5px;
+  }
+  
+  .box ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #topBar {
+    padding: 3px;
+    font-size: 10px;
+  }
+  
+  aside {
+    padding: 8px;
+    font-size: 13px;
+  }
+  
+  #welcome {
+    padding: 10px 8px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  #buttons img {
+    max-width: 70px;
+  }
+  
+  #pokemon {
+    width: 35px;
+  }
+  
+  footer {
+    font-size: 10px;
+    padding: 5px;
   }
 }
 

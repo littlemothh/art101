@@ -1,0 +1,337 @@
+/* Two Column Layout CSS */
+
+/* Customizable Variables */
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20568.gif');
+  
+  --font: 'Nunito', sans-serif;
+  --font-color: #f8bffb;
+  
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+  
+  --link-color: #ED64F5;
+  
+  --content-bg-color: #43256E;
+  --sidebar-bg-color: #241445;
+  --content-border-color: 2px dashed #ED64F5;
+  --highlight-color: #13092D;
+  
+  --container-max-width: 1000px;
+  --content-padding: 25px;
+  --sidebar-width: 280px;
+  --content-gap: 25px;
+}
+
+/* Font Imports */
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Base Styles */
+html {
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor: url("https://ita.toys/links/apple.gif"), auto;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Container */
+#container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+#main-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--content-bg-color);
+  padding: var(--content-padding);
+  border: var(--content-border-color);
+}
+
+#main-header h1 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 0 0 0 0;
+}
+
+
+nav {
+  position:fixed;
+bottom:30px;
+left:30px;
+background-color: var(--content-bg-color);
+padding: 15px;
+border: var(--content-border-color);
+}
+
+nav a {
+color: var(--link-color);
+text-decoration: none;
+font-size: 20px;
+}
+
+nav a:hover {
+cursor: url("https://ita.toys/links/apple2.png"), auto;
+text-decoration: underline;
+}
+
+/* Two Column Layout */
+#content-wrapper {
+  display: flex;
+  gap: var(--content-gap);
+  align-items: flex-start;
+}
+
+#main-content {
+  flex: 1;
+}
+
+#sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+}
+
+/* Content Blocks */
+.content-block {
+  background-color: var(--content-bg-color);
+  border: var(--content-border-color);
+  margin-bottom: 25px;
+  padding: var(--content-padding);
+}
+
+.content-block h1, .content-block h2, .content-block h3,
+.content-block h4, .content-block h5, .content-block h6 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  margin-top: 0;
+}
+
+.content-block h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--content-border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.content-block h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.content-block p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.content-block ul, .content-block ol {
+  padding-left: 25px;
+}
+
+.content-block li {
+  margin-bottom: 8px;
+}
+
+.content-block a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.content-block a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+}
+
+/* Sidebar Blocks */
+.sidebar-block {
+  background-color: var(--sidebar-bg-color);
+  border: var(--content-border-color);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.sidebar-block.highlight {
+  background-color: var(--highlight-color);
+  border-color: var(--header-color);
+}
+
+.sidebar-block h3 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid var(--content-border-color);
+  padding-bottom: 8px;
+}
+
+.sidebar-block p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 8px;
+}
+
+.sidebar-nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  cursor: url("https://ita.toys/links/apple2.png"), auto;
+  text-decoration: underline;
+  border-bottom-color: var(--link-color);
+}
+
+/* Blockquotes */
+blockquote {
+  background-color: var(--sidebar-bg-color);
+  border-left: 4px solid var(--content-border-color);
+  margin: 20px 0;
+  padding: 15px 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+
+/* Large Tablet */
+@media only screen and (max-width: 1024px) {
+  :root {
+    --container-max-width: 95%;
+    --sidebar-width: 250px;
+    --content-gap: 20px;
+  }
+}
+
+/* Tablet - Stack columns */
+@media only screen and (max-width: 768px) {
+  :root {
+    --content-padding: 20px;
+  }
+  
+  #container {
+    padding: 15px;
+  }
+  
+  #content-wrapper {
+    flex-direction: column;
+  }
+  
+  #sidebar {
+    width: 100%;
+    order: 2;
+  }
+  
+  #main-content {
+    order: 1;
+  }
+  
+  #main-header h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+  .content-block h2 {
+    font-size: 20px;
+  }
+  
+  .sidebar-block {
+    padding: 15px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  :root {
+    --content-padding: 15px;
+    --content-gap: 15px;
+  }
+  
+  #container {
+    padding: 10px;
+  }
+  
+  #main-header {
+    padding: 15px;
+  }
+  
+  #main-header h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .content-block {
+    margin-bottom: 20px;
+  }
+  
+  .content-block h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .content-block h3 {
+    font-size: 16px;
+  }
+  
+  .content-block ul, .content-block ol {
+    padding-left: 20px;
+  }
+  
+  .sidebar-block {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-block h3 {
+    font-size: 15px;
+  }
+}

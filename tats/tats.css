@@ -1,0 +1,89 @@
+/* you can control the aesthetics of the about page by changing 
+the variables below in this :root class*/
+:root {
+  --bg-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%20599.gif');
+
+  --header-font: Georgia, 'Times New Roman', Times, serif;
+  --header-color: #ED64F5;
+  --header-box-color: #d0fad6;
+  --font-color: #ED64F5;
+
+  --border-color: #ED64F5;
+
+}
+
+html{
+  background-image: var(--bg-image);
+  background-size: 65px;
+  cursor:url("https://ita.toys/links/apple.gif"), auto;
+
+  font-family: var(--font);
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+h1,h2,h3 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  
+}
+
+strong {
+  /* this styles bold text */
+  color: #ED64F5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover { 
+    cursor: url("https://ita.toys/links/apple2.png"), auto;
+    text-decoration: underline;
+}
+
+#container{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+}
+
+#tats{
+    display:flex;
+    justify-content: center;
+    max-width:900px;
+    flex-wrap: wrap;
+}
+
+#tats img{
+    width: 300px;
+    margin: 15px;
+    border: 6px dotted var(--border-color);
+}
+
+#header{
+  background-color: var(--header-box-color);
+  padding: 10px;
+  border: 6px dotted var(--border-color);
+}
+
+#backbutton{
+  background-color: var(--header-box-color);
+  padding: 10px;
+  border: 6px dotted var(--border-color);
+  position:fixed;
+  bottom:30px;
+  left:30px;
+  color: var(--font-color);
+}
