@@ -1,88 +1,287 @@
 {
     "twoD": [
         {
-            "path": "img/album.jpeg",
-            "title": "Album Concept"
+            "path": "img/2d artwork/aaaugh!.JPG",
+            "title": "Aaaugh!"
         },
         {
-            "path": "img/careful.jpg",
-            "title": "Careful!!"
+            "path": "img/2d artwork/Band Flyer.jpeg",
+            "title": "Band Flyer"
         },
         {
-            "path": "img/lifedrawing.png",
-            "title": "Life Drawing Practice"
+            "path": "img/2d artwork/broken circle.jpeg",
+            "title": "Broken Circle"
         },
         {
-            "path": "img/mintForMe.jpeg",
-            "title": "Mint for Me"
+            "path": "img/2d artwork/careful!!!.jpg",
+            "title": "Careful!!!"
         },
         {
-            "path": "img/patchedTogether.png",
+            "path": "img/2d artwork/cicaida.jpeg",
+            "title": "Cicaida"
+        },
+        {
+            "path": "img/2d artwork/crying.jpg",
+            "title": "Crying"
+        },
+        {
+            "path": "img/2d artwork/ditigalWork.jpg",
+            "title": "Digital Work"
+        },
+        {
+            "path": "img/2d artwork/for Damon.png",
+            "title": "For Damon"
+        },
+        {
+            "path": "img/2d artwork/for Denyse.JPG",
+            "title": "For Denyse"
+        },
+        {
+            "path": "img/2d artwork/hello! im noki bay!.jpeg",
+            "title": "Hello! I'm Noki Bay!"
+        },
+        {
+            "path": "img/2d artwork/it was all change_.mp4",
+            "thumbnail": "img/2d artwork/it was all change_.png",
+            "title": "It Was All Change"
+        },
+        {
+            "path": "img/2d artwork/kiki the bird.jpg",
+            "title": "Kiki the Bird"
+        },
+        {
+            "path": "img/2d artwork/lazarim mask.png",
+            "title": "Lazarim Mask"
+        },
+        {
+            "path": "img/2d artwork/little moth.jpeg",
+            "title": "Little Moth"
+        },
+        {
+            "path": "img/2d artwork/miau!_.jpg",
+            "title": "Miau!"
+        },
+        {
+            "path": "img/2d artwork/moff.jpg",
+            "title": "Moff"
+        },
+        {
+            "path": "img/2d artwork/patchedTogether.png",
             "title": "Patched Together"
         },
         {
-            "path": "img/pickedApart.png",
+            "path": "img/2d artwork/picked apart.png",
             "title": "Picked Apart"
         },
         {
-            "path": "img/stretchedThin.jpg",
+            "path": "img/2d artwork/porter college dorms, ucsc.jpg",
+            "title": "Porter College Dorms, UCSC"
+        },
+        {
+            "path": "img/2d artwork/shocking work!.JPG",
+            "title": "Shocking Work!"
+        },
+        {
+            "path": "img/2d artwork/sphingidae.PNG",
+            "title": "Sphingidae"
+        },
+        {
+            "path": "img/2d artwork/stretched thin.jpg",
             "title": "Stretched Thin"
         },
         {
-            "path": "img/silverEyes.png",
-            "title": "Silvery Eyes"
+            "path": "img/2d artwork/through the fishbowl.JPG",
+            "title": "Through the Fishbowl"
         },
         {
-            "path": "img/sketchbook1.jpeg",
-            "title": "Sketchbook 1"
+            "path": "img/2d artwork/two peas.jpeg",
+            "title": "Two Peas"
         },
         {
-            "path": "img/sketchbook2.jpeg",
-            "title": "Sketchbook 2"
+            "path": "img/2d artwork/what lies beyond.jpg",
+            "title": "What Lies Beyond"
         },
         {
-            "path": "img/sketchbook5.png",
-            "title": "Sketchbook 5"
-        },
-        {
-            "path": "img/sketchbook6.jpeg",
-            "title": "Sketchbook 6"
-        },
-        {
-            "path": "img/sketchbook7.png",
-            "title": "Sketchbook 7"
-        },
-        {
-            "path": "img/sketchbook8.png",
-            "title": "Sketchbook 8"
-        },
-        {
-            "path": "img/sketchbook9.png",
-            "title": "Sketchbook 9"
+            "path": "img/2d artwork/yuck.JPEG",
+            "title": "Yuck"
         }
     ],
     "threeD": [
         {
-            "path": "img/aMistake.jpg",
-            "title": "CSSSA 2022 final work"
+            "path": "img/3d work/cobb tray.png",
+            "title": "Cobb Tray"
         },
         {
-            "path": "img/crystalShores.jpeg",
-            "title": "Crystal Shores Coffee Mug"
+            "path": "img/3d work/copper maw.png",
+            "title": "Copper Maw"
         },
         {
-            "path": "img/mask.png",
-            "title": "Ceramic Mask"
+            "path": "img/3d work/Do Better.jpeg",
+            "title": "Do Better"
         },
         {
-            "path": "img/teaSet.jpg",
-            "title": "Buggy Tea Set"
+            "path": "img/3d work/environmental capstone.JPG",
+            "title": "Environmental Capstone"
+        },
+        {
+            "path": "img/3d work/metal lamp.jpg",
+            "title": "Metal Lamp"
+        },
+        {
+            "path": "img/3d work/Mini Octopus Jar.jpeg",
+            "title": "Mini Octopus Jar"
         }
     ],
-    "digital": [
+    "ceramics": [
         {
-            "path": "img/ditigalWork.jpg",
-            "title": "Digital Art Compilation"
+            "path": "img/ceramics/a Mistake.jpg",
+            "title": "A Mistake"
+        },
+        {
+            "path": "img/ceramics/Ammonite.jpg",
+            "title": "Ammonite"
+        },
+        {
+            "path": "img/ceramics/Baby Vases.jpg",
+            "title": "Baby Vases"
+        },
+        {
+            "path": "img/ceramics/blinged crustacean.jpg",
+            "title": "Blinged Crustacean"
+        },
+        {
+            "path": "img/ceramics/Blue Heron.JPG",
+            "title": "Blue Heron"
+        },
+        {
+            "path": "img/ceramics/Desert Dish.jpg",
+            "title": "Desert Dish"
+        },
+        {
+            "path": "img/ceramics/Evil Vase.jpg",
+            "title": "Evil Vase"
+        },
+        {
+            "path": "img/ceramics/Insect Tea Set.jpg",
+            "title": "Insect Tea Set"
+        },
+        {
+            "path": "img/ceramics/Master Study.png",
+            "title": "Master Study"
+        },
+        {
+            "path": "img/ceramics/Oh Holy Pot!.jpg",
+            "title": "Oh Holy Pot!"
+        },
+        {
+            "path": "img/ceramics/Rabbit Tray.jpg",
+            "title": "Rabbit Tray"
+        },
+        {
+            "path": "img/ceramics/snail cup.JPG",
+            "title": "Snail Cup"
+        },
+        {
+            "path": "img/ceramics/Snail Mug.jpg",
+            "title": "Snail Mug"
+        },
+        {
+            "path": "img/ceramics/snail pot.JPG",
+            "title": "Snail Pot"
+        },
+        {
+            "path": "img/ceramics/sunburst.JPG",
+            "title": "Sunburst"
+        },
+        {
+            "path": "img/ceramics/swallow mug.JPG",
+            "title": "Swallow Mug"
+        },
+        {
+            "path": "img/ceramics/Swirled Pot.jpg",
+            "title": "Swirled Pot"
+        },
+        {
+            "path": "img/ceramics/The last frog.JPG",
+            "title": "The Last Frog"
+        },
+        {
+            "path": "img/ceramics/tiny celadon.JPG",
+            "title": "Tiny Celadon"
+        },
+        {
+            "path": "img/ceramics/Urchins.jpg",
+            "title": "Urchins"
+        }
+    ],
+    "sketchbooks": [
+        {
+            "path": "img/sketchbooks/sketchbook1.jpeg",
+            "title": "Sketchbook 1"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook2.jpeg",
+            "title": "Sketchbook 2"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook3.jpeg",
+            "title": "Sketchbook 3"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook4.jpg",
+            "title": "Sketchbook 4"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook5.png",
+            "title": "Sketchbook 5"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook6.jpeg",
+            "title": "Sketchbook 6"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook7.png",
+            "title": "Sketchbook 7"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook8.png",
+            "title": "Sketchbook 8"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook9.png",
+            "title": "Sketchbook 9"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook10.jpg",
+            "title": "Sketchbook 10"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook11.jpg",
+            "title": "Sketchbook 11"
+        },
+        {
+            "path": "img/sketchbooks/Sketchbook12.png",
+            "title": "Sketchbook 12"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook13.png",
+            "title": "Sketchbook 13"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook14.jpeg",
+            "title": "Sketchbook 14"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook15.jpg",
+            "title": "Sketchbook 15"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook16.jpg",
+            "title": "Sketchbook 16"
+        },
+        {
+            "path": "img/sketchbooks/sketchbook17.jpg",
+            "title": "Sketchbook 17"
         }
     ]
 }
