@@ -13,47 +13,24 @@
   fetch("manifest.json")
     .then(res => res.json())
     .then(data => {
-      const twoDContainer = document.getElementById("twoD");
-      const threeDContainer = document.getElementById("threeD");
-      const digitalContainer = document.getElementById("digital");
-
-      data.twoD.forEach(file => {
-        const image = document.createElement("div");
-        image.className = "image-box";
-        image.style.backgroundImage = `url("${file.path}")`;
-        image.style.width = "300px";
-        image.style.height = "300px";
-        image.style.backgroundSize = "cover";
-        image.addEventListener("click", () => {
-          window.open(file.path, "_blank");
-        });
-        twoDContainer.appendChild(image);
-      });
-
-      data.threeD.forEach(file => {
-        const image = document.createElement("div");
-        image.className = "image-box";
-        image.style.backgroundImage = `url("${file.path}")`;
-        image.style.width = "300px";
-        image.style.height = "300px";
-        image.style.backgroundSize = "cover";
-        image.addEventListener("click", () => {
-          window.open(file.path, "_blank");
-        });
-        threeDContainer.appendChild(image);
-      });
-
-      data.digital.forEach(file => {
-        const image = document.createElement("div");
-        image.className = "image-box";
-        image.style.backgroundImage = `url("${file.path}")`;
-        image.style.width = "300px";
-        image.style.height = "300px";
-        image.style.backgroundSize = "cover";
-        image.addEventListener("click", () => {
-          window.open(file.path, "_blank");
-        });
-        digitalContainer.appendChild(image);
+      const categories = ['twoD', 'threeD', 'ceramics', 'sketchbooks', 'digital'];
+      
+      categories.forEach(category => {
+        const container = document.getElementById(category);
+        if (data[category]) {
+          data[category].forEach(file => {
+            const image = document.createElement("div");
+            image.className = "image-box";
+            image.style.backgroundImage = file.thumbnail ? `url("${file.thumbnail}")` : `url("${file.path}")`;
+            image.style.width = "300px";
+            image.style.height = "300px";
+            image.style.backgroundSize = "cover";
+            image.addEventListener("click", () => {
+              window.open(file.path, "_blank");
+            });
+            container.appendChild(image);
+          });
+        }
       });
     });
 
@@ -84,6 +61,12 @@ function openTab(evt, tab) {
       <button class="tablinks" onclick="openTab(event, 'threeD')">
         <h3>3D</h3>
       </button>
+      <button class="tablinks" onclick="openTab(event, 'ceramics')">
+        <h3>Ceramics</h3>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'sketchbooks')">
+        <h3>Sketchbooks</h3>
+      </button>
       <button class="tablinks" onclick="openTab(event, 'digital')">
         <h3>Digital</h3>
       </button>
@@ -94,6 +77,8 @@ function openTab(evt, tab) {
     <div class="image-container">
   <div id="twoD" class="tabcontent"></div>
   <div id="threeD" class="tabcontent"></div>
+  <div id="ceramics" class="tabcontent"></div>
+  <div id="sketchbooks" class="tabcontent"></div>
   <div id="digital" class="tabcontent">
     <div id="labLinks" onClick="window.open('../labLinks/index.html', '_blank')" class="image-box">
         <h1>

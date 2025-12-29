@@ -64,10 +64,11 @@ a:hover {
     justify-content: center;
     max-width:900px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 #tats img{
-    width: 300px;
+    width: 200px;
     margin: 15px;
     border: 6px dotted var(--border-color);
 }
