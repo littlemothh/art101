@@ -128,7 +128,10 @@ a:hover {
 
 #interestingimage{
     text-align:center;
-    margin:20px;
+    margin:10px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: #43256E;
 }
 
 .box {
@@ -246,6 +249,12 @@ a:hover {
   
   #interestingimage {
     margin: 10px;
+  }
+
+  #back-link-container {
+    padding-top: 30px;
+   border-color: #ED64F5;
+   border-width: 2px;
   }
   
   ul {
