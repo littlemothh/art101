@@ -126,6 +126,7 @@ and change the media query according to the comment! */
 
 #pokemon {
   width:50px;
+  padding-bottom: 5px;
 }
 
 #flex {
@@ -149,6 +150,7 @@ aside {
   order: 2;
   margin: 0;
 }
+
 
 /* what's this "order" stuff about??
 allow me to explain!
@@ -197,6 +199,7 @@ footer {
   padding: 10px;
   text-align: center;
   /* this centers the footer text */
+  padding-bottom: 40px;
 }
 
 h1,
@@ -223,7 +226,7 @@ strong {
 #topBar {
   width: 100%;
   height: 30px;
-  padding: 10px;
+  padding: 5px;
   font-size: smaller;
   background-color: var(--marquis-color);
   overflow: hidden; /* Prevent overflow on small screens */

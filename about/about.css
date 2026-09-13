@@ -82,6 +82,13 @@ a:hover {
     text-decoration: underline;
 }
 
+#back-link-container {
+    padding: 20px;
+    bottom:30px;
+    left:30px;
+    position: absolute;
+}
+
 #container{
     margin: auto;
     margin-top: 20px;
@@ -133,6 +140,17 @@ a:hover {
     border-width: 3px;
     border-color: #43256E;
 }
+
+  #back-link-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-width: 5px;
+    font-size: 14px;
+    z-index: 1000;
+    background-color: #f8bffb;
+    border-width: 4px;
+  }
 
 .box {
   margin:10px;
@@ -198,7 +216,7 @@ a:hover {
     justify-content: center;
     gap: 10px;
   }
-  
+
   #teeth img {
     max-width: 45%;
     flex: 1;
@@ -245,18 +263,13 @@ a:hover {
   
   #teeth img {
     max-width: 80%;
+    padding-bottom: 30px;
   }
   
   #interestingimage {
     margin: 10px;
   }
 
-  #back-link-container {
-    padding-top: 30px;
-   border-color: #ED64F5;
-   border-width: 2px;
-  }
-  
   ul {
     padding-left: 15px;
   }

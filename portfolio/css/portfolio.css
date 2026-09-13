@@ -352,15 +352,15 @@ a:hover {
     height: 150px !important;
     margin: 3px !important;
   }
-  
   #back-link-container {
     position: fixed;
-    bottom: 5px;
-    left: 5px;
-    padding: 3px 6px;
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
     font-size: 10px;
     z-index: 1000;
   }
+
 }
 
 /* Extra Small Mobile (below 320px) */
