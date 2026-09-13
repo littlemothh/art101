@@ -210,11 +210,12 @@
             "title": "Urchins"
         }
     ],
-    "digital": {
+    "digital": [
+        {
          "path": "img/digital/BandFlyer.jpeg",
             "title": "Band Flyer "
-
-    },
+        }
+    ],
     "sketchbooks": [
         {
             "path": "img/sketchbooks/sketchbook1.jpeg",
