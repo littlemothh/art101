@@ -17,14 +17,6 @@
             "title": "Cicaida"
         },
         {
-            "path": "img/2d artwork/crying.jpg",
-            "title": "Crying"
-        },
-        {
-            "path": "img/2d artwork/ditigalWork.jpg",
-            "title": "Digital Work"
-        },
-        {
             "path": "img/2d artwork/for Damon.png",
             "title": "For Damon"
         },
@@ -35,10 +27,6 @@
         {
             "path": "img/2d artwork/hello! im noki bay!.jpeg",
             "title": "Hello! I'm Noki Bay!"
-        },
-        {
-            "path": "img/2d artwork/kiki the bird.jpg",
-            "title": "Kiki the Bird"
         },
         {
             "path": "img/2d artwork/lazarim mask.png",
@@ -209,6 +197,18 @@
         {
              "path": "img/digital/BandFlyer.jpeg",
             "title": "Band Flyer "
+        },
+        {
+            "path": "img/2d artwork/kiki the bird.jpg",
+            "title": "Kiki the Bird"
+        },
+                {
+            "path": "img/2d artwork/ditigalWork.jpg",
+            "title": "Digital Work"
+        },
+                {
+            "path": "img/2d artwork/crying.jpg",
+            "title": "Crying"
         }
     ],
     "sketchbooks": [
