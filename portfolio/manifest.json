@@ -5,10 +5,6 @@
             "title": "Aaaugh!"
         },
         {
-            "path": "img/2d artwork/Band Flyer.jpeg",
-            "title": "Band Flyer"
-        },
-        {
             "path": "img/2d artwork/broken circle.jpeg",
             "title": "Broken Circle"
         },
@@ -213,6 +209,9 @@
             "path": "img/ceramics/Urchins.jpg",
             "title": "Urchins"
         }
+    ],
+    "digital": [
+
     ],
     "sketchbooks": [
         {
