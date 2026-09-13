@@ -29,10 +29,6 @@
             "title": "Hello! I'm Noki Bay!"
         },
         {
-            "path": "img/2d artwork/lazarim mask.png",
-            "title": "Lazarim Mask"
-        },
-        {
             "path": "img/2d artwork/little moth.jpeg",
             "title": "Little Moth"
         },
@@ -79,10 +75,6 @@
         {
             "path": "img/2d artwork/what lies beyond.jpg",
             "title": "What Lies Beyond"
-        },
-        {
-            "path": "img/2d artwork/yuck.JPEG",
-            "title": "Yuck"
         }
     ],
     "threeD": [
@@ -189,6 +181,10 @@
             "title": "Tiny Celadon"
         },
         {
+            "path": "img/2d artwork/lazarim mask.png",
+            "title": "Lazarim Mask"
+        },
+        {
             "path": "img/ceramics/Urchins.jpg",
             "title": "Urchins"
         }
@@ -209,6 +205,10 @@
                 {
             "path": "img/2d artwork/crying.jpg",
             "title": "Crying"
+        },
+                {
+            "path": "img/2d artwork/yuck.JPEG",
+            "title": "Yuck"
         }
     ],
     "sketchbooks": [
