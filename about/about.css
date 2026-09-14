@@ -117,6 +117,7 @@ a:hover {
     width: 100%;
     max-width: 500px;
     height: auto;
+    padding-bottom: 10px;
 }
 
 #box1{
