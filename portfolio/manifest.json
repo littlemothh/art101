@@ -1,8 +1,64 @@
 {
     "twoD": [
-                {
+        {
+            "path": "img/2d artwork/iorexus.png",
+            "title": "Iorexus Naevius Editions"
+        },
+        {
+            "path": "img/2d artwork/mississippikite.JPG",
+            "title": "Mississippi Kite Study"
+        },
+{
+            "path": "img/2d artwork/feeesh.JPG",
+            "title": "Little Goldfish"
+        },
+        {
+            "path": "img/2d artwork/eye.jpg",
+            "title": "Eye"
+        },
+        {
+            "path": "img/2d artwork/wing.jpg",
+            "title": "torn From wings"
+        },
+        {
+            "path": "img/2d artwork/claw.jpg",
+            "title": "Talons"
+        },
+        {
+            "path": "img/2d artwork/eye.jpg",
+            "title": "Eye"
+        },
+        {
+            "path": "img/2d artwork/swans - hilma af klint.jpg",
+            "title": "Swans - Hilma Af Klint"
+        },
+        {
+            "path": "img/2d artwork/handoff.JPG",
+            "title": "Handoff"
+        },
+         {
+            "path": "img/2d artwork/ribcage.jpg",
+            "title": "Ribcage"
+        },
+        {
+            "path": "img/2d artwork/fisheagle.JPG",
+            "title": "Fish Eagle Sequence"
+        },
+        {
+            "path": "img/2d artwork/shapez.JPG",
+            "title": "Rainbow Shapezzz"
+        },
+        {
             "path": "img/2d artwork/moff.jpg",
             "title": "Moff"
+        },
+        {
+            "path": "img/2d artwork/abstract.JPG",
+            "title": "Abstract Painting"
+        },
+        {
+            "path": "img/2d artwork/black necked stilts.JPG",
+            "title": "Black Necked Stilts"
         },
         {
             "path": "img/2d artwork/aaaugh!.JPG",
@@ -105,6 +161,26 @@
     ],
     "ceramics": [
         {
+            "path": "img/ceramics/weirdpot.jpg",
+            "title": "Weird Pot with Rose"
+        },
+        {
+            "path": "img/ceramics/hellstar.JPG",
+            "title": "Hellstar Collab"
+        },
+        {
+            "path": "img/ceramics/superbfairywren.jpeg",
+            "title": "Superb Wren"
+        },
+        {
+            "path": "img/ceramics/flycatcher.JPG",
+            "title": "Scissor Tailed Flycatcher"
+        },
+        {
+            "path": "img/ceramics/a Mistake.jpg",
+            "title": "A Mistake"
+        },
+        {
             "path": "img/ceramics/a Mistake.jpg",
             "title": "A Mistake"
         },
@@ -139,6 +215,10 @@
         {
             "path": "img/ceramics/Oh Holy Pot!.jpg",
             "title": "Oh Holy Pot!"
+        },
+        {
+            "path": "img/ceramics/doublecup.JPG",
+            "title": "Double Walled Cup"
         },
         {
             "path": "img/ceramics/Rabbit Tray.jpg",
@@ -185,12 +265,8 @@
             "title": "Urchins"
         }
     ],
-    "digital": [
+    "digital": [  
         {
-            "path": "img/2d artwork/kiki the bird.jpg",
-            "title": "Kiki the Bird"
-        },
-                {
             "path": "img/2d artwork/ditigalWork.jpg",
             "title": "Digital Work"
         },
@@ -201,12 +277,44 @@
                 {
             "path": "img/2d artwork/yuck.JPEG",
             "title": "Yuck"
+        },
+         {
+            "path": "img/digital/contox.png",
+            "title": "Contox"
+        },    
+                {
+            "path": "img/2d artwork/kiki the bird.jpg",
+            "title": "Kiki the Bird"
         }
     ],
     "sketchbooks": [
         {
             "path": "img/sketchbooks/sketchbook1.jpeg",
             "title": "Sketchbook 1"
+        },
+        {
+            "path": "img/sketchbooks/bugs.JPG",
+            "title": "Bugs!!"
+        },
+        {
+            "path": "img/sketchbooks/ratking.JPG",
+            "title": "Rat King!"
+        },
+        {
+            "path": "img/sketchbooks/still life.JPG",
+            "title": "Still Life Study"
+        },
+        {
+            "path": "img/sketchbooks/itsover.JPG",
+            "title": "I cant believe it..."
+        },
+        {
+            "path": "img/sketchbooks/sketchbookbird.JPG",
+            "title": "Sketchbook with birds"
+        },
+        {
+            "path": "img/sketchbooks/sketchbookpots.JPG",
+            "title": "Pot designs"
         },
         {
             "path": "img/sketchbooks/sketchbook2.jpeg",
@@ -223,6 +331,14 @@
         {
             "path": "img/sketchbooks/sketchbook6.jpeg",
             "title": "Sketchbook 6"
+        },
+                {
+            "path": "img/sketchbooks/lilcomic.JPG",
+            "title": "meds."
+        },
+        {
+            "path": "img/sketchbooks/BROH.JPG",
+            "title": "BROH"
         },
         {
             "path": "img/sketchbooks/sketchbook7.png",
