@@ -25,15 +25,11 @@
             "title": "Talons"
         },
         {
-            "path": "img/2d artwork/eye.jpg",
-            "title": "Eye"
-        },
-        {
-            "path": "img/2d artwork/swans - hilma af klint.jpg",
+            "path": "img/2d artwork/swans.jpg",
             "title": "Swans - Hilma Af Klint"
         },
         {
-            "path": "img/2d artwork/handoff.JPG",
+            "path": "img/2d artwork/handoff.jpg",
             "title": "Handoff"
         },
          {
@@ -41,11 +37,11 @@
             "title": "Ribcage"
         },
         {
-            "path": "img/2d artwork/fisheagle.JPG",
+            "path": "img/2d artwork/fisheagle.png",
             "title": "Fish Eagle Sequence"
         },
         {
-            "path": "img/2d artwork/shapez.JPG",
+            "path": "img/2d artwork/shapez.png",
             "title": "Rainbow Shapezzz"
         },
         {
@@ -175,10 +171,6 @@
         {
             "path": "img/ceramics/flycatcher.JPG",
             "title": "Scissor Tailed Flycatcher"
-        },
-        {
-            "path": "img/ceramics/a Mistake.jpg",
-            "title": "A Mistake"
         },
         {
             "path": "img/ceramics/a Mistake.jpg",
@@ -337,7 +329,7 @@
             "title": "meds."
         },
         {
-            "path": "img/sketchbooks/BROH.JPG",
+            "path": "img/sketchbooks/broh.JPG",
             "title": "BROH"
         },
         {
